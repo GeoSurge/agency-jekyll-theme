@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+font-family: "Anderson_Grotesk";
+src: url("{{ site.baseurl }}/Anderson_Grotesk/AndersonGrotesk.otf") format("opentype");
+}
+
+html, body {
+    height:100%;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -269,13 +278,14 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/splash_pic2.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height:100%;
 }
 
 header .intro-text {
@@ -285,7 +295,8 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
+    /*font-family: '{{ site.data.template.font.secondary }}';*/
+    font-family: 'Anderson_Grotesk';
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
@@ -302,13 +313,14 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 400px;
         padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.secondary }};
+        /*font-family: '{{ site.data.template.font.secondary }}';*/
+        font-family: 'Anderson_Grotesk';
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
@@ -864,4 +876,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+#main-logo {
+    width: 170px;
+    padding-top: 15px;
 }
