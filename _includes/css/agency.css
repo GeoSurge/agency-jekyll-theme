@@ -15,7 +15,8 @@ html, body {
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: {{ site.data.template.font.secondary }};
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -28,7 +29,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -128,7 +129,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 15px 30px;
     border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
@@ -223,6 +224,10 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
+}
+
+.navbar-default.black-text .nav li a {
+    color: #222;
 }
 
 .navbar-default .nav li a:hover,
@@ -881,5 +886,5 @@ body {
 
 #main-logo {
     width: 170px;
-    padding-top: 15px;
+    padding-top: 8px;
 }

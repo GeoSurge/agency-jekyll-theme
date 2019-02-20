@@ -8,5 +8,5 @@ color:
 
 # Font Families
 font:
-  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: '"Anderson_Grotesk","Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: '"Helvetica Neue", Helvetica, Arial, sans-serif'
