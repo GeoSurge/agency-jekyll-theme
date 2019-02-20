@@ -336,8 +336,9 @@ header .intro-text .intro-heading {
     }
 }
 
-section {
+section.about {
     padding: 100px 0;
+    height: 100vh;
 }
 
 section h2.section-heading {
@@ -668,68 +669,68 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+#contact .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+#contact .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+#contact .form-group input,
+#contact .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+#contact .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+#contact .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+#contact .form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+#contact .text-danger {
     color: #e74c3c;
 }
 
