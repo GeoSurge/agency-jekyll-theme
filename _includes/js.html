@@ -18,3 +18,12 @@
 
     <script src="{{ "/js/osmauth.min.js" | prepend: site.baseurl }}"></script>
 
+<script>
+ auth = osmAuth({
+     url: "https://master.apis.dev.openstreetmap.org",
+     oauth_consumer_key: 'a5C23lQvm50dycVshSCM46HJYm5mVsfVvfaZN2Wh',
+     oauth_secret: 'Kl6EGKalFpgI4MXaEMBdGQw6EbnK1EVEri5cVsDR',
+     auto: true,
+     done: (info) => { console.log("done loading", info); }
+ });
+</script>
